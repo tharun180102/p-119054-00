@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Index.css";
 
 const Index = () => {
@@ -33,7 +34,15 @@ const Index = () => {
   return (
     <div className="badge-container">
       <div className="badge-content">
-        <h1 className="page-title">Badge Management System</h1>
+        <div className="flex justify-between items-center mb-6">
+          <h1 className="page-title">Badge Management System</h1>
+          <Link 
+            to="/categories" 
+            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+          >
+            Manage Categories
+          </Link>
+        </div>
         
         <div className="badge-card">
           {/* Header Section */}
