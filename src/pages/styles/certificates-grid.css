@@ -1,0 +1,35 @@
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certificate-preview {
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.certificate-preview:hover {
+  transform: scale(1.02);
+}
+
+.certificate-preview.selected {
+  border-color: #5681ef;
+}
+
+.certificate-preview img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}

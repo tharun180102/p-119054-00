@@ -1,6 +1,8 @@
-
 import React, { useState } from "react";
-import "./Certificate.css";
+import "./styles/certificate-layout.css";
+import "./styles/upload-section.css";
+import "./styles/description-section.css";
+import "./styles/certificates-grid.css";
 
 const Certificate = () => {
   const [imageUrl, setImageUrl] = useState("");

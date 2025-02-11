@@ -1,0 +1,24 @@
+
+.certificate-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 2rem;
+}
+
+.certificate-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .certificate-container {
+    padding: 1rem;
+  }
+}
